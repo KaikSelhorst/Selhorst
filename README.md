@@ -1,42 +1,36 @@
-# Nuxt 3 Minimal Starter
+# Kaik's Homepage
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[https://selhorst.vercel.app/](https://selhorst.vercel.app)
 
-## Setup
+## Stack
 
-Make sure to install the dependencies:
+- [Nuxt.js](https://nuxt.com) - An open source framework making web development simple and powerful.
+- [Tailwind CSS](https://tailwindcss.com) - A utility-first CSS framework packed with classes.
+- [Three.js](https://threejs.org/) - 3D library for JavaScript
 
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
+## Project structure
 
 ```bash
-npm run dev
+$PROJECT_ROOT
+│   # Page files
+├── pages
+│   # Vue.js component files
+├── components
+│   # Non-Vue.js modules
+├── lib
+│   # Static files for images and 3d model file
+└── public
 ```
 
-## Production
+### License
 
-Build the application for production:
+Koorst © 2021 - 22 // Some reserved rights.
 
-```bash
-npm run build
-```
+### Contact
 
-Locally preview production build:
+Contact by my social networks that are in my [README](https://github.com/KaikSelhorst)
 
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+<a href='https://github.com/KaikSelhorst' target='_blank'>
+  <img src='https://avatars.githubusercontent.com/u/82120356?v=4'  width=80 alt='Kaik Selhorst Picture (Fox)' title='Kaik Selhorst'/>
+</a>
+s
