@@ -2,8 +2,8 @@
 const socials = [
   {
     label: "Email",
-    name: "oficial@kaikselhorst.com",
-    link: "mailto:oficial@kaikselhorst.com",
+    name: "oficial.kaikselhorst@gmail.com",
+    link: "mailto:oficial.kaikselhorst@gmail.com",
   },
   {
     label: "LinkedIn",
