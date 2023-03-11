@@ -24,7 +24,7 @@ $PROJECT_ROOT
 
 ### License
 
-Koorst © 2021 - 22 // Some reserved rights.
+KaikSelhorst © 2023 // Some reserved rights.
 
 ### Contact
 
