@@ -21,8 +21,12 @@ const templateItemList = (
   i: number
 ) => {
   const t = `
-  <dt class="text-[#ff9cac] mb-1">${i}.  ${title}<dt>
-  <dd class="text-[#D7DAE1] mb-8">${msg}</dd>
+  <li class='hover:bg-[#090909] duration-300 p-4 my-2'>
+    <a href='/projects/${title}'>
+      <h3 class="text-[#ff9cac] mb-1">${i}.  ${title}<h3>
+      <p class="text-[#D7DAE1]">${msg}</p>
+    </a>
+  </li>
   `;
   return t;
 };
@@ -31,5 +35,5 @@ const itemsList = computed(() => items.map(templateItemList).join(""));
 </script>
 
 <template>
-  <dl v-html="itemsList" class="font-mono"></dl>
+  <ul v-html="itemsList" class="font-mono"></ul>
 </template>
