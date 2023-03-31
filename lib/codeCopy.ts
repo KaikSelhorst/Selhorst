@@ -33,20 +33,8 @@ function copy(event: Event) {
     const code = pre?.querySelector("code")?.innerText;
     if (code && ID) {
       navigator.clipboard.writeText(code);
-      btn.appendChild(alertCopy(ID));
+      btn.innerHTML = "Copied!";
+      setTimeout(() => (btn.innerHTML = "Copy"), 1000);
     }
   }
-}
-
-function alertCopy(id: string) {
-  const oldAlert = document.querySelector(`.alert[id='${id}']`);
-  if (oldAlert) oldAlert.remove();
-
-  const alert = document.createElement("span");
-  alert.innerHTML = "Copied!";
-  alert.className = "absolute right-0 top-full py-4 alert";
-  alert.id = id;
-
-  setTimeout(() => alert.remove(), 1500);
-  return alert;
 }
