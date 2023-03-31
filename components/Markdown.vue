@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import "highlight.js/styles/atom-one-dark.css";
+import codeCopy from "../lib/codeCopy";
 
 defineProps({
   markdown: {
@@ -7,10 +8,14 @@ defineProps({
     require: true,
   },
 });
+
+const refMarkdown = ref();
+// Adding button for copy code
+onMounted(() => refMarkdown.value.querySelectorAll("pre").forEach(codeCopy));
 </script>
 
 <template>
-  <article v-html="markdown" class="markdown"></article>
+  <article v-html="markdown" class="markdown" ref="refMarkdown"></article>
 </template>
 
 <style>
@@ -86,7 +91,10 @@ defineProps({
   @apply text-white;
 }
 .markdown pre {
-  @apply bg-[#090909] p-4 my-6 overflow-auto rounded-sm;
+  @apply bg-[#090909] p-4 my-6 overflow-auto rounded-sm relative;
+}
+.markdown pre button {
+  @apply absolute top-2 right-2 bg-[#1e1e1e] py-1 px-2 rounded-sm text-[#D7DAE1] duration-200 text-sm font-mono;
 }
 
 .markdown :is(ul, li) {
