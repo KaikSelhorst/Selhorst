@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import "highlight.js/styles/atom-one-dark.css";
+// import "highlight.js/styles/base16/gruvbox-dark-soft.css";
+import "highlight.js/styles/base16/ros-pine-moon.css";
 import codeCopy from "../lib/codeCopy";
 
 defineProps({
@@ -20,7 +21,7 @@ onMounted(() => refMarkdown.value.querySelectorAll("pre").forEach(codeCopy));
 
 <style>
 .markdown {
-  @apply text-[#D7DAE1];
+  @apply text-[#D7DAE1] font-mono;
 }
 .markdown :is(h1, h2, h3, h4, h5, h6) {
   @apply text-white font-bold block mt-6 mb-2;

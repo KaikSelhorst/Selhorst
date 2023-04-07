@@ -8,10 +8,8 @@ marked.setOptions({
   },
 });
 
-export default async function (project: string) {
-  const URL = `https://raw.githubusercontent.com/KaikSelhorst/${project}/main/README.md`;
-
-  const { data: markdown } = await useFetch(URL);
+export default async function (url: string) {
+  const { data: markdown } = await useFetch(url);
   if (typeof markdown.value !== "string") return "";
   return marked.parse(markdown.value);
 }

@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import Title from "~/components/Title";
+import Title from "~~/components/Title.vue";
 import Model3D from "~/components/Model3D.vue";
 import Text from "~/components/Text.vue";
 import Separator from "~~/components/Separator.vue";
-import List from "~~/components/List.vue";
+import ListProjects from "~~/components/ListProjects.vue";
+import RecentPosts from "~~/components/RecentPosts.vue";
 import Contact from "~~/components/Contact.vue";
 import Footer from "~~/components/Footer.vue";
 </script>
@@ -22,7 +23,9 @@ import Footer from "~~/components/Footer.vue";
     </Text>
     <Separator />
     <Title>Cool Projects</Title>
-    <List />
+    <ListProjects />
+    <Separator />
+    <RecentPosts />
     <Separator />
     <Title>Contact</Title>
     <Text

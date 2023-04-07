@@ -10,7 +10,9 @@ import project from "../../lib/project";
 const route = useRoute();
 const name = String(route.params.project);
 
-const html = await markdown(name);
+const URL = `https://raw.githubusercontent.com/KaikSelhorst/${name}/main/README.md`;
+
+const html = await markdown(URL);
 const projectInfo = await project(name);
 
 useHead({
