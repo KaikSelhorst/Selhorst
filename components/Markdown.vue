@@ -98,8 +98,22 @@ onMounted(() => refMarkdown.value.querySelectorAll("pre").forEach(codeCopy));
   @apply absolute top-2 right-2 bg-[#1e1e1e] py-1 px-2 rounded-sm text-[#D7DAE1] duration-200 text-sm font-mono;
 }
 
-.markdown :is(ul, li) {
-  list-style: square;
-  list-style-position: inside;
+.markdown :is(ul, ol) {
+  @apply block pl-8;
+}
+
+.markdown ul > li::before {
+  @apply mr-2 text-[#ff9cac] block absolute -left-7 top-0 content-["*"];
+}
+
+.markdown ol {
+  @apply list-decimal;
+}
+.markdown ol li::marker {
+  @apply text-[#ff9cac];
+}
+
+.markdown li {
+  @apply relative list-item;
 }
 </style>
