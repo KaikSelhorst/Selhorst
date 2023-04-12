@@ -94,6 +94,9 @@ onMounted(() => refMarkdown.value.querySelectorAll("pre").forEach(codeCopy));
 .markdown pre {
   @apply bg-[#090909] p-4 my-6 overflow-auto rounded-sm relative;
 }
+.markdown > *:not(pre) > code {
+  @apply bg-[#090909] px-1 rounded-sm inline-block text-[#ff9cac] my-0.5;
+}
 .markdown pre button {
   @apply absolute top-2 right-2 bg-[#1e1e1e] py-1 px-2 rounded-sm text-[#D7DAE1] duration-200 text-sm font-mono;
 }
