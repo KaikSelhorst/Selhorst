@@ -24,6 +24,6 @@
   opacity: 0.2;
   pointer-events: none;
   transform: translateY(0);
-  filter: contrast(10%) brightness(40%);
+  filter: contrast(25%) brightness(40%);
 }
 </style>
