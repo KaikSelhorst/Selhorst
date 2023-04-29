@@ -33,4 +33,3 @@ Contact by my social networks that are in my [README](https://github.com/KaikSel
 <a href='https://github.com/KaikSelhorst' target='_blank'>
   <img src='https://avatars.githubusercontent.com/u/82120356?v=4'  width=80 alt='Kaik Selhorst Picture (Fox)' title='Kaik Selhorst'/>
 </a>
-s
