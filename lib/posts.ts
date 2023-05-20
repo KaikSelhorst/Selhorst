@@ -6,8 +6,8 @@ export default async function () {
     posts.value = posts.value.map((post) => post.name);
 
     posts.value = (posts.value as Array<string>).sort((a, b) => {
-      const idA = Number(a.split("_")[0]);
-      const idB = Number(b.split("_")[0]);
+      const idA = Number(a.split("-")[0]);
+      const idB = Number(b.split("-")[0]);
 
       return idB - idA;
     });
