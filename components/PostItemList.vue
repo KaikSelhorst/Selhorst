@@ -17,7 +17,14 @@ defineProps({
   >
     <NuxtLink class="flex-1 py-4 flex justify-between" :to="`/posts/${post}`">
       <span>
-        {{ capitalize(post.split("-").join(" ")) }}
+        {{
+          capitalize(
+            post
+              .replace(/^\d{4}-/gi, "")
+              .split("-")
+              .join(" ")
+          )
+        }}
       </span>
       <span class="text-[#ff9cac]">➔</span>
     </NuxtLink>

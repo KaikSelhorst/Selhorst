@@ -2,12 +2,9 @@
 import Title from "./Title.vue";
 import PostItemList from "./PostItemList.vue";
 
-const { data: posts } = await useFetch(
-  "https://api.github.com/repos/KaikSelhorst/SelhorstPosts/contents"
-);
-if (posts.value && posts.value instanceof Array) {
-  posts.value = posts.value.map((post) => post.name);
-}
+import Posts from "~~/lib/posts";
+
+const posts = await Posts();
 </script>
 
 <template>
