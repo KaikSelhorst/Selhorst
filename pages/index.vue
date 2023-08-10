@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Title from "~~/components/Title.vue";
-import Model3D from "~/components/Model3D.vue";
 import Text from "~/components/Text.vue";
 import Separator from "~~/components/Separator.vue";
 import ListProjects from "~~/components/ListProjects.vue";
@@ -10,8 +9,7 @@ import Footer from "~~/components/Footer.vue";
 </script>
 
 <template>
-  <Model3D />
-  <article class="relative">
+  <article class="relative pt-4">
     <Title>About</Title>
     <Text>
       I'm a web developer, with programming experience using TypeScript, Vue.js,

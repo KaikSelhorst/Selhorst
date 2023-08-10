@@ -6,7 +6,6 @@
 
 - [Nuxt.js](https://nuxt.com) - An open source framework making web development simple and powerful.
 - [Tailwind CSS](https://tailwindcss.com) - A utility-first CSS framework packed with classes.
-- [Three.js](https://threejs.org/) - 3D library for JavaScript
 
 ## Project structure
 
@@ -18,7 +17,7 @@ $PROJECT_ROOT
 ├── components
 │   # Non-Vue.js modules
 ├── lib
-│   # Static files for images and 3d model file
+│   # Static files for images
 └── public
 ```
 
